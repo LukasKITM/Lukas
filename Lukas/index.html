@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lukas HTML</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Medija</h1>
+
+    <!-- Image section -->
+    <section id="images">
+        <h2>Paveikslėliai</h2>
+            <a href="https://shorturl.at/chkK7" target="_blank"><img src="./Images/Bloom.jpg" alt="A lake with a thin ice layer"></a><br>
+            <a href="https://shorturl.at/muAB6" target="_blank"><img src="./Images/Redsky.png" alt="A beautiful red sky"></a><br>
+            <img src="./Images/Bluewater.jpg" alt="Super bright cyan water"><br>
+            <img src="https://shorturl.at/bikET" alt="Green mountains"><br>
+            <img src="https://shorturl.at/aenO8" alt="A stone bridge above water"><br>
+            <img src="https://shorturl.at/qyVY0" alt="Artificial Nature">
+    </section>
+
+    <!-- Video section -->
+    <section id="video">
+        <h2>Vaizdo įrašai</h2>
+            <video controls src="./Videos/Waves.mp4" alt="Bangos"></video><br>
+            <video controls src="./Videos/Autumn.mp4" alt="Rudens medžiai"></video><br>
+            <video controls src="./Videos/Tulips.mp4" alt="Tulpės ir dangus"></video><br>
+            <iframe width="900" height="455" src="https://www.youtube.com/embed/668nUCeBHyY?si=yp5DXOKfvvdSH8Id" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </section>
+
+    <!-- Audio section -->
+
+    <section id="audio">
+        <h2>Garso įrašai</h2>
+        <figure>
+            <figcaption>Lietus.mp3</figcaption>
+            <audio controls src="./Audio/Rain.mp3" alt="Lietaus garsai"></audio>
+        </figure>
+        <figure>
+            <figcaption>Tailando naktis.mp3</figcaption>
+            <audio controls src="./Audio/Thailand night.mp3" alt="Tailando nakties garsai"></audio>
+        </figure>
+        <figure>
+            <figcaption>Bangos ir paukščiai.mp3</figcaption>
+            <audio controls src="./Audio/Bangos ir paukščiai.mp3" alt="Bangos ir paukščiai"></audio>
+        </figure>
+    </section>
+
+    <!-- Žemėlapis -->
+
+    <section id="maps">
+        <h2>Mokykla</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2294.3412104822096!2d23.915995877162587!3d54.89693315758554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e72276dd555557%3A0x2bf3519be19be30c!2sKauno%20Informacini%C5%B3%20technologij%C5%B3%20mokykla!5e0!3m2!1slt!2slt!4v1695106166961!5m2!1slt!2slt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <!-- Form section -->
+    
+    <section>
+        <form action="results.html" method="GET" enctype="multipart/form-data">
+            <fieldset>
+            <div>
+                <label for="name">Vardas</label>
+                <input type="text" name="name" id="name" placeholder="Jūsų vardas" required>
+            </div>
+            <div>
+                <label for="lname">Pavardė</label>
+                <input type="text" name="lname" id="lname" placeholder="Jūsų pavardė" required>
+            </div>
+            <div>
+                <label for="email">El. Paštas</label>
+                <input type="email" name="email" id="email" placeholder="Jūsų el.paštas" required>
+            </div>
+            <div>
+                <label for="pass">Vardas</label>
+                <input type="password" name="pass" id="pass" placeholder="Jūsų slaptažodis" required>
+            </div>
+            <div>
+                <label for="age">Amžius</label>
+                <input type="number" name="age" id="age" min="1" max="120">
+            </div>
+            <div>
+                <label for="date">Gimimo data</label>
+                <input type="date" name="date" id="date" min="1920-12-31" required>
+            </div>
+            Lytis
+            <div>
+                <label for="vyras">Vyras</label>
+                <input type="radio" name="lytis" id="vyras" checked>
+            </div>
+            <div>
+                <label for="moteris">Moteris</label>
+                <input type="radio" name="lytis" id="moteris">
+            </div>
+            <div>
+                <label for="akiuSpalva">Akių spalva</label>
+                <select name="akiuSpalva" id="akiuSpalva">
+                    <option value="green">Žalios</option>
+                    <option value="blue">Mėlynos</option>
+                    <option value="brown">Rudos</option>
+                    <option value="other">Kita</option>
+                </select>
+            </div>
+            <div>
+                <label for="bio">Apie</label>
+                <textarea id="bio" name="bio" rows="4"></textarea>
+            </div>
+            <button type="reset">Atstatyti</button>
+            <button type="submit">Siųsti</button>
+        </fieldset>
+        </form>
+    </section>
+
+</body>
+</html>
